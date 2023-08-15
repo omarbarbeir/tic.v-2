@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+
+#main{
+    background-image: url(./img/2078959.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#start{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:200px;
+    height:40px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+#start.active{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+#game{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    gap:4px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#title{
+    position: absolute;
+    top:-25px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 35px;
+    text-align: center;
+    width:345px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px white;
+    text-shadow: 0 0 3px black;
+}
+
+#container{
+    background-image: url(./img/quiz2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transform: translateX(-100%);
+    pointer-events: none;
+    transition: 0.6s linear;
+}
+#container.active{
+    transform: translateX(0);
+}
+#exit{
+    position: absolute;
+    top:0;
+    right:0;
+    background: white;
+    color:darkred;
+    width: 35px;
+    height:35px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    font-weight:700;
+    transition: 0.3s ease;
+    cursor: pointer;
+    pointer-events: auto;
+}
+#exit:hover{
+    background: darkred;
+    color:white
+}
+#restart{
+    position: absolute;
+    top:50px;
+    right:0;
+    background: white;
+    color:darkred;
+    width: 35px;
+    height:35px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    font-weight:700;
+    transition: 0.3s ease;
+    cursor: pointer;
+    pointer-events: auto;
+}
+#restart:hover{
+    background: darkred;
+    color:white
+}
+#home{
+    position:absolute ;
+    top:30%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+#home h1{
+    font-size: 40px;
+    font-family: impact;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px darkred;
+}
+#home h2{
+    font-size: 45px;
+    font-family: impact;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px darkred;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tic.js",
+  "scripts": {
+    "tic": "npx tailwindcss -i  ./tic.css -o ./output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
